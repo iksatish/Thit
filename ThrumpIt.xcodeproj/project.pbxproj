@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00C26AB8B7FF045BF5EB142F /* Pods_ThrumpIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B5698BFDB998EA2689D630 /* Pods_ThrumpIt.framework */; };
+		220D814A1FD34887001B7053 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D81491FD34887001B7053 /* ItemTableViewCell.swift */; };
+		220D814C1FD34A33001B7053 /* ApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D814B1FD34A33001B7053 /* ApiResponseModel.swift */; };
 		2253B7C11FBFE4F1002550E1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2253B7C01FBFE4F1002550E1 /* ApiClient.swift */; };
 		2253B7C41FC17769002550E1 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2253B7C31FC17769002550E1 /* Tabbar.storyboard */; };
 		225951FB1FC179AE00282145 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225951FA1FC179AE00282145 /* ItemCell.xib */; };
+		2259520A1FC47A5900282145 /* UrlPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225952091FC47A5900282145 /* UrlPaths.swift */; };
 		22D082E21F9F4B430011E5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D082E11F9F4B430011E5D4 /* AppDelegate.swift */; };
 		22D082E41F9F4B430011E5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D082E31F9F4B430011E5D4 /* ViewController.swift */; };
 		22D082E71F9F4B430011E5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D082E51F9F4B430011E5D4 /* Main.storyboard */; };
@@ -42,9 +45,12 @@
 
 /* Begin PBXFileReference section */
 		02A286FDC6DD2335BF559808 /* Pods-ThrumpIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThrumpIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThrumpIt/Pods-ThrumpIt.release.xcconfig"; sourceTree = "<group>"; };
+		220D81491FD34887001B7053 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		220D814B1FD34A33001B7053 /* ApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModel.swift; sourceTree = "<group>"; };
 		2253B7C01FBFE4F1002550E1 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		2253B7C31FC17769002550E1 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		225951FA1FC179AE00282145 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		225952091FC47A5900282145 /* UrlPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPaths.swift; sourceTree = "<group>"; };
 		22D082DE1F9F4B430011E5D4 /* ThrumpIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrumpIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D082E11F9F4B430011E5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22D082E31F9F4B430011E5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,10 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220D81481FD34862001B7053 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				220D81491FD34887001B7053 /* ItemTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		2253B7BE1FBFE4DC002550E1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				225952071FC47A2F00282145 /* Model */,
 				2253B7BF1FBFE4F1002550E1 /* ApiClient */,
+				225952091FC47A5900282145 /* UrlPaths.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -120,6 +136,14 @@
 				225951FA1FC179AE00282145 /* ItemCell.xib */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		225952071FC47A2F00282145 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				220D814B1FD34A33001B7053 /* ApiResponseModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		22D082D51F9F4B430011E5D4 = {
@@ -149,6 +173,7 @@
 			children = (
 				2253B7C21FC17749002550E1 /* Storyboards */,
 				2253B7BE1FBFE4DC002550E1 /* Networking */,
+				220D81481FD34862001B7053 /* UI */,
 				22D082E11F9F4B430011E5D4 /* AppDelegate.swift */,
 				22D082E31F9F4B430011E5D4 /* ViewController.swift */,
 				22D082E51F9F4B430011E5D4 /* Main.storyboard */,
@@ -502,9 +527,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2259520A1FC47A5900282145 /* UrlPaths.swift in Sources */,
 				22D082EA1F9F4B430011E5D4 /* ThrumpIt.xcdatamodeld in Sources */,
+				220D814C1FD34A33001B7053 /* ApiResponseModel.swift in Sources */,
 				22D082E41F9F4B430011E5D4 /* ViewController.swift in Sources */,
 				22D082E21F9F4B430011E5D4 /* AppDelegate.swift in Sources */,
+				220D814A1FD34887001B7053 /* ItemTableViewCell.swift in Sources */,
 				2253B7C11FBFE4F1002550E1 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
