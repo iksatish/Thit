@@ -15,15 +15,19 @@
 		225951FB1FC179AE00282145 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225951FA1FC179AE00282145 /* ItemCell.xib */; };
 		2259520A1FC47A5900282145 /* UrlPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225952091FC47A5900282145 /* UrlPaths.swift */; };
 		22D082E21F9F4B430011E5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D082E11F9F4B430011E5D4 /* AppDelegate.swift */; };
-		22D082E41F9F4B430011E5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D082E31F9F4B430011E5D4 /* ViewController.swift */; };
-		22D082E71F9F4B430011E5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D082E51F9F4B430011E5D4 /* Main.storyboard */; };
 		22D082EA1F9F4B430011E5D4 /* ThrumpIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22D082E81F9F4B430011E5D4 /* ThrumpIt.xcdatamodeld */; };
 		22D082EC1F9F4B430011E5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D082EB1F9F4B430011E5D4 /* Assets.xcassets */; };
 		22D082EF1F9F4B430011E5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D082ED1F9F4B430011E5D4 /* LaunchScreen.storyboard */; };
 		22D082FA1F9F4B430011E5D4 /* ThrumpItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D082F91F9F4B430011E5D4 /* ThrumpItTests.swift */; };
 		22D083051F9F4B430011E5D4 /* ThrumpItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D083041F9F4B430011E5D4 /* ThrumpItUITests.swift */; };
-		D3D6C0634A8F7F9DF8E25A8C /* Pods_ThrumpItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52DCB6191ADB6F8AA794ED /* Pods_ThrumpItTests.framework */; };
-		D93C715D3910FEAB3DD12C40 /* Pods_ThrumpItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915E027E71EC28DD8EC4C6FD /* Pods_ThrumpItUITests.framework */; };
+		C69EE3921FE816FF006E269C /* ChallengeListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3911FE816FF006E269C /* ChallengeListService.swift */; };
+		C69EE3941FE81A5B006E269C /* ChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3931FE81A5B006E269C /* ChallengeModel.swift */; };
+		C69EE3961FE8202D006E269C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3951FE8202D006E269C /* BaseViewController.swift */; };
+		C69EE3981FE82046006E269C /* ChallengeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3971FE82046006E269C /* ChallengeListViewController.swift */; };
+		C69EE39A1FE84D34006E269C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3991FE84D34006E269C /* SignInViewController.swift */; };
+		C69EE39C1FE84D42006E269C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE39B1FE84D42006E269C /* SignUpViewController.swift */; };
+		C69EE39F1FE8B099006E269C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE39E1FE8B099006E269C /* Util.swift */; };
+		C69EE3A11FE8F32F006E269C /* AuthenticatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3A01FE8F32F006E269C /* AuthenticatorService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +57,6 @@
 		225952091FC47A5900282145 /* UrlPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPaths.swift; sourceTree = "<group>"; };
 		22D082DE1F9F4B430011E5D4 /* ThrumpIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrumpIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D082E11F9F4B430011E5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22D082E31F9F4B430011E5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22D082E61F9F4B430011E5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22D082E91F9F4B430011E5D4 /* ThrumpIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThrumpIt.xcdatamodel; sourceTree = "<group>"; };
 		22D082EB1F9F4B430011E5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D082EE1F9F4B430011E5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,10 +71,14 @@
 		7A52DCB6191ADB6F8AA794ED /* Pods_ThrumpItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThrumpItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B5698BFDB998EA2689D630 /* Pods_ThrumpIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThrumpIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		915E027E71EC28DD8EC4C6FD /* Pods_ThrumpItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThrumpItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91F9CA7B1048EB2A2FC9CB8B /* Pods-ThrumpItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThrumpItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThrumpItUITests/Pods-ThrumpItUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CD206D05C27A30FBABB9160F /* Pods-ThrumpItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThrumpItTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThrumpItTests/Pods-ThrumpItTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D401326884A28359C74403D6 /* Pods-ThrumpItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThrumpItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThrumpItTests/Pods-ThrumpItTests.release.xcconfig"; sourceTree = "<group>"; };
-		DB9DA5EB37BEFF75CBB50CAF /* Pods-ThrumpItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThrumpItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThrumpItUITests/Pods-ThrumpItUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C69EE3911FE816FF006E269C /* ChallengeListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListService.swift; sourceTree = "<group>"; };
+		C69EE3931FE81A5B006E269C /* ChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModel.swift; sourceTree = "<group>"; };
+		C69EE3951FE8202D006E269C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C69EE3971FE82046006E269C /* ChallengeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListViewController.swift; sourceTree = "<group>"; };
+		C69EE3991FE84D34006E269C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C69EE39B1FE84D42006E269C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C69EE39E1FE8B099006E269C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		C69EE3A01FE8F32F006E269C /* AuthenticatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D6C0634A8F7F9DF8E25A8C /* Pods_ThrumpItTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93C715D3910FEAB3DD12C40 /* Pods_ThrumpItUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				220D81491FD34887001B7053 /* ItemTableViewCell.swift */,
+				C69EE3951FE8202D006E269C /* BaseViewController.swift */,
+				C69EE3971FE82046006E269C /* ChallengeListViewController.swift */,
+				C69EE3991FE84D34006E269C /* SignInViewController.swift */,
+				C69EE39B1FE84D42006E269C /* SignUpViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 		2253B7BE1FBFE4DC002550E1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C69EE3901FE8167C006E269C /* Services */,
 				225952071FC47A2F00282145 /* Model */,
 				2253B7BF1FBFE4F1002550E1 /* ApiClient */,
 				225952091FC47A5900282145 /* UrlPaths.swift */,
@@ -142,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				220D814B1FD34A33001B7053 /* ApiResponseModel.swift */,
+				C69EE3931FE81A5B006E269C /* ChallengeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,10 +183,9 @@
 			children = (
 				2253B7C21FC17749002550E1 /* Storyboards */,
 				2253B7BE1FBFE4DC002550E1 /* Networking */,
+				C69EE39D1FE8B066006E269C /* Util */,
 				220D81481FD34862001B7053 /* UI */,
 				22D082E11F9F4B430011E5D4 /* AppDelegate.swift */,
-				22D082E31F9F4B430011E5D4 /* ViewController.swift */,
-				22D082E51F9F4B430011E5D4 /* Main.storyboard */,
 				22D082EB1F9F4B430011E5D4 /* Assets.xcassets */,
 				22D082ED1F9F4B430011E5D4 /* LaunchScreen.storyboard */,
 				22D082F01F9F4B430011E5D4 /* Info.plist */,
@@ -208,10 +217,6 @@
 			children = (
 				3CC8431F7F21430C63EDBAE3 /* Pods-ThrumpIt.debug.xcconfig */,
 				02A286FDC6DD2335BF559808 /* Pods-ThrumpIt.release.xcconfig */,
-				CD206D05C27A30FBABB9160F /* Pods-ThrumpItTests.debug.xcconfig */,
-				D401326884A28359C74403D6 /* Pods-ThrumpItTests.release.xcconfig */,
-				91F9CA7B1048EB2A2FC9CB8B /* Pods-ThrumpItUITests.debug.xcconfig */,
-				DB9DA5EB37BEFF75CBB50CAF /* Pods-ThrumpItUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -224,6 +229,23 @@
 				915E027E71EC28DD8EC4C6FD /* Pods_ThrumpItUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C69EE3901FE8167C006E269C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C69EE3911FE816FF006E269C /* ChallengeListService.swift */,
+				C69EE3A01FE8F32F006E269C /* AuthenticatorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C69EE39D1FE8B066006E269C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C69EE39E1FE8B099006E269C /* Util.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,12 +275,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22D0830C1F9F4B430011E5D4 /* Build configuration list for PBXNativeTarget "ThrumpItTests" */;
 			buildPhases = (
-				C1D3A7A06796C9BA911D83F3 /* [CP] Check Pods Manifest.lock */,
 				22D082F11F9F4B430011E5D4 /* Sources */,
 				22D082F21F9F4B430011E5D4 /* Frameworks */,
 				22D082F31F9F4B430011E5D4 /* Resources */,
-				8B01C5E63492084F31311B6C /* [CP] Embed Pods Frameworks */,
-				05F96D8DBA42AECEE94820D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,12 +293,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22D0830F1F9F4B430011E5D4 /* Build configuration list for PBXNativeTarget "ThrumpItUITests" */;
 			buildPhases = (
-				BDD202F58DA4F9CBFE2F17B4 /* [CP] Check Pods Manifest.lock */,
 				22D082FC1F9F4B430011E5D4 /* Sources */,
 				22D082FD1F9F4B430011E5D4 /* Frameworks */,
 				22D082FE1F9F4B430011E5D4 /* Resources */,
-				35E0EAB07724AF6189543B5C /* [CP] Embed Pods Frameworks */,
-				3CEF41480070017253A5B624 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,7 +362,6 @@
 				22D082EF1F9F4B430011E5D4 /* LaunchScreen.storyboard in Resources */,
 				225951FB1FC179AE00282145 /* ItemCell.xib in Resources */,
 				22D082EC1F9F4B430011E5D4 /* Assets.xcassets in Resources */,
-				22D082E71F9F4B430011E5D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,21 +382,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05F96D8DBA42AECEE94820D1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThrumpItTests/Pods-ThrumpItTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1378DBD5FF19A5828A9041C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,36 +400,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		35E0EAB07724AF6189543B5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThrumpItUITests/Pods-ThrumpItUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3CEF41480070017253A5B624 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThrumpItUITests/Pods-ThrumpItUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		43214B0F785255A395FED373 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +410,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -447,6 +418,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,57 +441,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThrumpIt/Pods-ThrumpIt-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B01C5E63492084F31311B6C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThrumpItTests/Pods-ThrumpItTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDD202F58DA4F9CBFE2F17B4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ThrumpItUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1D3A7A06796C9BA911D83F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ThrumpItTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -527,11 +448,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69EE39A1FE84D34006E269C /* SignInViewController.swift in Sources */,
 				2259520A1FC47A5900282145 /* UrlPaths.swift in Sources */,
 				22D082EA1F9F4B430011E5D4 /* ThrumpIt.xcdatamodeld in Sources */,
 				220D814C1FD34A33001B7053 /* ApiResponseModel.swift in Sources */,
-				22D082E41F9F4B430011E5D4 /* ViewController.swift in Sources */,
+				C69EE3981FE82046006E269C /* ChallengeListViewController.swift in Sources */,
+				C69EE3941FE81A5B006E269C /* ChallengeModel.swift in Sources */,
+				C69EE39C1FE84D42006E269C /* SignUpViewController.swift in Sources */,
+				C69EE3A11FE8F32F006E269C /* AuthenticatorService.swift in Sources */,
+				C69EE39F1FE8B099006E269C /* Util.swift in Sources */,
+				C69EE3961FE8202D006E269C /* BaseViewController.swift in Sources */,
 				22D082E21F9F4B430011E5D4 /* AppDelegate.swift in Sources */,
+				C69EE3921FE816FF006E269C /* ChallengeListService.swift in Sources */,
 				220D814A1FD34887001B7053 /* ItemTableViewCell.swift in Sources */,
 				2253B7C11FBFE4F1002550E1 /* ApiClient.swift in Sources */,
 			);
@@ -569,14 +497,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22D082E51F9F4B430011E5D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22D082E61F9F4B430011E5D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22D082ED1F9F4B430011E5D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -701,9 +621,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZT42V94U76;
 				INFOPLIST_FILE = ThrumpIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thrumpit.ThrumpIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doctususa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -716,9 +637,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZT42V94U76;
 				INFOPLIST_FILE = ThrumpIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thrumpit.ThrumpIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doctususa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -727,7 +649,6 @@
 		};
 		22D0830D1F9F4B430011E5D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD206D05C27A30FBABB9160F /* Pods-ThrumpItTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -744,7 +665,6 @@
 		};
 		22D0830E1F9F4B430011E5D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D401326884A28359C74403D6 /* Pods-ThrumpItTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -761,7 +681,6 @@
 		};
 		22D083101F9F4B430011E5D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91F9CA7B1048EB2A2FC9CB8B /* Pods-ThrumpItUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -777,7 +696,6 @@
 		};
 		22D083111F9F4B430011E5D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB9DA5EB37BEFF75CBB50CAF /* Pods-ThrumpItUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
