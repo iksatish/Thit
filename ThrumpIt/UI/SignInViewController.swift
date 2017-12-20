@@ -80,6 +80,14 @@ class SignInViewController: BaseViewController, UITextFieldDelegate {
     }
     
     func signIn(){
-        
+        let params = ["uid": emailTextField.text, "password": passwordTextField.text]
+        AuthenticatorService.instance.signIn(params: params as [String : AnyObject], success: { (user) in
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            UserPreference.instance.logInUser()
+            appDelegate.launchApp()
+        }) { (error) in
+            UserPreference.instance.logInUser()
+            self.showError(error: error)
+        }
     }
 }

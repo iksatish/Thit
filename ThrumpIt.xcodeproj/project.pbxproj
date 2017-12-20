@@ -28,6 +28,8 @@
 		C69EE39C1FE84D42006E269C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE39B1FE84D42006E269C /* SignUpViewController.swift */; };
 		C69EE39F1FE8B099006E269C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE39E1FE8B099006E269C /* Util.swift */; };
 		C69EE3A11FE8F32F006E269C /* AuthenticatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3A01FE8F32F006E269C /* AuthenticatorService.swift */; };
+		C69EE3A31FEA6138006E269C /* ThTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3A21FEA6138006E269C /* ThTabBarViewController.swift */; };
+		C69EE3A51FEA62EF006E269C /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3A41FEA62EF006E269C /* UserPreference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		C69EE39B1FE84D42006E269C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C69EE39E1FE8B099006E269C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		C69EE3A01FE8F32F006E269C /* AuthenticatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorService.swift; sourceTree = "<group>"; };
+		C69EE3A21FEA6138006E269C /* ThTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThTabBarViewController.swift; sourceTree = "<group>"; };
+		C69EE3A41FEA62EF006E269C /* UserPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				C69EE3971FE82046006E269C /* ChallengeListViewController.swift */,
 				C69EE3991FE84D34006E269C /* SignInViewController.swift */,
 				C69EE39B1FE84D42006E269C /* SignUpViewController.swift */,
+				C69EE3A21FEA6138006E269C /* ThTabBarViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				C69EE39E1FE8B099006E269C /* Util.swift */,
+				C69EE3A41FEA62EF006E269C /* UserPreference.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -450,6 +456,7 @@
 			files = (
 				C69EE39A1FE84D34006E269C /* SignInViewController.swift in Sources */,
 				2259520A1FC47A5900282145 /* UrlPaths.swift in Sources */,
+				C69EE3A31FEA6138006E269C /* ThTabBarViewController.swift in Sources */,
 				22D082EA1F9F4B430011E5D4 /* ThrumpIt.xcdatamodeld in Sources */,
 				220D814C1FD34A33001B7053 /* ApiResponseModel.swift in Sources */,
 				C69EE3981FE82046006E269C /* ChallengeListViewController.swift in Sources */,
@@ -460,6 +467,7 @@
 				C69EE3961FE8202D006E269C /* BaseViewController.swift in Sources */,
 				22D082E21F9F4B430011E5D4 /* AppDelegate.swift in Sources */,
 				C69EE3921FE816FF006E269C /* ChallengeListService.swift in Sources */,
+				C69EE3A51FEA62EF006E269C /* UserPreference.swift in Sources */,
 				220D814A1FD34887001B7053 /* ItemTableViewCell.swift in Sources */,
 				2253B7C11FBFE4F1002550E1 /* ApiClient.swift in Sources */,
 			);

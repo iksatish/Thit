@@ -75,6 +75,11 @@ class UserModel: Mappable{
     var isCurrentUser = false
     var isCurrentUserFollowingChallenger = false
     var isCurrentUserFollowingOpponent = false
+    var uid: String?
+    var description: String?
+    var type: String?
+    var emailAddress: String?
+    var isActive: String?
     
     func mapping(map: Map) {
         userId    <- map["userId"]
@@ -83,5 +88,19 @@ class UserModel: Mappable{
         isCurrentUser      <- map["isCurrentUser"]
         isCurrentUserFollowingChallenger      <- map["isCurrentUserFollowingChallenger"]
         isCurrentUserFollowingOpponent      <- map["isCurrentUserFollowingOpponent"]
+    }
+}
+
+class ApiError: Mappable{
+    required init?(map: Map) {}
+    var code = -1
+    var msg: String?
+    
+    func mapping(map: Map) {
+        code    <- map["code"]
+        msg       <- map["msg"]
+    }
+    init(){
+        msg = "Service error, please try again!"
     }
 }

@@ -12,65 +12,63 @@ import Alamofire
 import SwiftyJSON
 
 class ApiClient: NSObject{
-    class func requestGETURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void) {
+    class func requestGETURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void) {
         Alamofire.request(strURL).responseJSON { (responseObject) -> Void in
-            
-            if responseObject.result.isSuccess {
-                let resJson = JSON(responseObject.result.value!)
-                success(resJson)
-            }
-            if responseObject.result.isFailure {
-                let error : Error = responseObject.result.error!
+            ApiClient.handlingResponse(responseObject: responseObject, success: { (json) in
+                success(json)
+            }, failure: { (error) in
                 failure(error)
-            }
+            })
         }
     }
     
-    class func requestPOSTURL(_ strURL : String, params : [String : AnyObject]?, headers : [String : String]?, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void){
+    class func requestPOSTURL(_ strURL : String, params : [String : AnyObject]?, headers : [String : String]?, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void){
         
         Alamofire.request(strURL, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (responseObject) -> Void in
-            
-            print(responseObject)
-            
-            if responseObject.result.isSuccess {
-                let resJson = JSON(responseObject.result.value!)
-                success(resJson)
-            }
-            if responseObject.result.isFailure {
-                let error : Error = responseObject.result.error!
+            ApiClient.handlingResponse(responseObject: responseObject, success: { (json) in
+                success(json)
+            }, failure: { (error) in
                 failure(error)
-            }
+            })
         }
     }
     
-    class func requestDELURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void) {
+    class func requestDELURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void) {
         Alamofire.request(strURL, method: .delete).responseJSON { (responseObject) -> Void in
-            
-            if responseObject.result.isSuccess {
-                let resJson = JSON(responseObject.result.value!)
-                success(resJson)
-            }
-            if responseObject.result.isFailure {
-                let error : Error = responseObject.result.error!
+            ApiClient.handlingResponse(responseObject: responseObject, success: { (json) in
+                success(json)
+            }, failure: { (error) in
                 failure(error)
-            }
+            })
         }
     }
     
-    class func requestPUTURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void) {
+    class func requestPUTURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void) {
         Alamofire.request(strURL, method: .put).responseJSON { (responseObject) -> Void in
-            
-            if responseObject.result.isSuccess {
-                let resJson = JSON(responseObject.result.value!)
-                success(resJson)
-            }
-            if responseObject.result.isFailure {
-                let error : Error = responseObject.result.error!
+            ApiClient.handlingResponse(responseObject: responseObject, success: { (json) in
+                success(json)
+            }, failure: { (error) in
                 failure(error)
-            }
+            })
         }
     }
     
+    class func handlingResponse(responseObject: DataResponse<Any>, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void){
+        if responseObject.result.isSuccess{
+            let resJson = JSON(responseObject.result.value!)
+            if let info = Mapper<ApiResponse>().map(JSONObject: resJson.rawValue){
+                if info.returnCode == 1, info.returnCodeDesc == SUCCESSKEY{
+                    success(resJson)
+                }else{
+                    failure(info.error ?? ApiError())
+                }
+            }
+        }else{
+            failure(ApiError())
+        }
+    }
     
 
 }
+
+

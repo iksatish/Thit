@@ -10,6 +10,7 @@ import UIKit
 
 class ChallengeListViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var signInBoxHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     var challengeList: [ChallengeModel]?
     
@@ -17,7 +18,11 @@ class ChallengeListViewController: BaseViewController, UITableViewDelegate, UITa
         super.viewDidLoad()
         self.tableView.rowHeight = 200
         self.tableView.register(UINib(nibName: "ItemCell", bundle: nil ), forCellReuseIdentifier: "cellIdentifier")
-        self.title = "ThrumpIt"
+        self.title = "Home"
+        if UserPreference.instance.isLoggedIn(){
+            signInBoxHeightConstraint.constant = 0
+        }
+        self.tableView.tableHeaderView = UISearchBar()
     }
     
     

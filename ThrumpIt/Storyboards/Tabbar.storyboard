@@ -16,6 +16,57 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Item 2-->
+        <scene sceneID="mhg-VW-vV5">
+            <objects>
+                <viewController id="eGw-3v-JYY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f4q-gd-gZF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8Uz-U6-36w"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="MgJ-vn-c4D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6XN-Sm-mwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="-150"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="MTT-PW-3hP">
+            <objects>
+                <viewController id="JzE-b5-zWC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rPL-qH-DFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jGh-Xm-9Oh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="pC5-Qu-aSE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9l-pa-wUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="-815"/>
+        </scene>
+        <!--Th Tab Bar View Controller-->
+        <scene sceneID="Hot-0A-gVR">
+            <objects>
+                <tabBarController storyboardIdentifier="ThTabBarViewController" id="U7y-ZV-8YW" customClass="ThTabBarViewController" customModule="ThrumpIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XGQ-82-sQl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gUP-06-vT9" kind="relationship" relationship="viewControllers" id="xSc-BH-RvM"/>
+                        <segue destination="JzE-b5-zWC" kind="relationship" relationship="viewControllers" id="LUT-BY-OEI"/>
+                        <segue destination="eGw-3v-JYY" kind="relationship" relationship="viewControllers" id="i8j-CI-NJZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swP-Mz-Sac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="-482"/>
+        </scene>
         <!--ThrumpIt-->
         <scene sceneID="hPG-tl-Evb">
             <objects>
@@ -25,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-Zg-TDI">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="n1r-Z2-PH5" id="xys-Hg-UDs"/>
@@ -33,7 +84,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-b4-tfk">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-3K-T0s">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="44"/>
@@ -84,17 +135,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="1EB-5J-YG8"/>
                     <connections>
+                        <outlet property="signInBoxHeightConstraint" destination="xkM-EA-vqa" id="8T4-pp-vWU"/>
                         <outlet property="tableView" destination="g6z-Zg-TDI" id="Woa-vo-iHI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBo-f0-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1442" y="-4"/>
+            <point key="canvasLocation" x="1441" y="261"/>
         </scene>
         <!--ThrumpIt-->
         <scene sceneID="Jg6-FK-hc8">
             <objects>
-                <navigationController title="ThrumpIt" automaticallyAdjustsScrollViewInsets="NO" id="gUP-06-vT9" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NonSignedInEntry" title="ThrumpIt" automaticallyAdjustsScrollViewInsets="NO" id="gUP-06-vT9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="DSP-mO-OD9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cc7-SF-Afb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

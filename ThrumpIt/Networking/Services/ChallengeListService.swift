@@ -14,11 +14,11 @@ let SUCCESSKEY = "Success"
 class ChallengeListService: NSObject{
     static let instance = ChallengeListService()
     
-    func getChallengeList(success:@escaping (ChallengeListModel) -> Void, failure:@escaping (Error) -> Void){
+    func getChallengeList(success:@escaping (ChallengeListModel) -> Void, failure:@escaping (ApiError) -> Void){
         let url = "\(BASE_URL)\(URI_CHL_LIST)"
         ApiClient.requestGETURL(url, success: { (json) in
-            guard let info = Mapper<ApiResponse>().map(JSONObject: json.rawValue), let list = Mapper<ChallengeListModel>().map(JSONObject: info.data), info.returnCode == 1, info.returnCodeDesc == SUCCESSKEY else{
-                failure(NSError())
+            guard let info = Mapper<ApiResponse>().map(JSONObject: json.rawValue), let list = Mapper<ChallengeListModel>().map(JSONObject: info.data) else{
+                failure(ApiError())
                 return
             }
             success(list)

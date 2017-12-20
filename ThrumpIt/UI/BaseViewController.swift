@@ -30,10 +30,10 @@ class BaseViewController: UIViewController {
         self.present(alertControlelr, animated: true, completion: nil)
     }
     
-    func showError(error: Error){
-        var title = "Service Error", message = "Please try again!"
-        if error.localizedDescription != ""{
-            message = error.localizedDescription
+    func showError(error: ApiError){
+        var title = "Service Error: \(error.code)", message = "Please try again!"
+        if let msg = error.msg{
+            message = msg
         }
         self.showAlert(title: title, message: message)
     }

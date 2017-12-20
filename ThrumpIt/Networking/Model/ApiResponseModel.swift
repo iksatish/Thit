@@ -15,10 +15,12 @@ class ApiResponse: Mappable{
     var data: Any?
     var returnCodeDesc: String?
     var returnCode = 0
+    var error: ApiError?
     
     func mapping(map: Map) {
         data    <- map["data"]
         returnCodeDesc       <- map["returnCodeDesc"]
         returnCode      <- map["returnCode"]
+        error      <- map["error"]
     }
 }
