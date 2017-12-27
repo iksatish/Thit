@@ -37,5 +37,5 @@ class BaseViewController: UIViewController {
         }
         self.showAlert(title: title, message: message)
     }
-
+    
 }

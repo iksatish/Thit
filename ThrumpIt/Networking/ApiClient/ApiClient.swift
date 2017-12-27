@@ -12,7 +12,7 @@ import Alamofire
 import SwiftyJSON
 
 class ApiClient: NSObject{
-    class func requestGETURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void) {
+    class func requestGETURL(isAuthenticationNeeded:Bool = false, _ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void) {
         Alamofire.request(strURL).responseJSON { (responseObject) -> Void in
             ApiClient.handlingResponse(responseObject: responseObject, success: { (json) in
                 success(json)

@@ -20,6 +20,8 @@
 		22D082EF1F9F4B430011E5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D082ED1F9F4B430011E5D4 /* LaunchScreen.storyboard */; };
 		22D082FA1F9F4B430011E5D4 /* ThrumpItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D082F91F9F4B430011E5D4 /* ThrumpItTests.swift */; };
 		22D083051F9F4B430011E5D4 /* ThrumpItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D083041F9F4B430011E5D4 /* ThrumpItUITests.swift */; };
+		C63234741FF2E03400DA69C9 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63234731FF2E03400DA69C9 /* NotificationsViewController.swift */; };
+		C63234761FF2E04400DA69C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63234751FF2E04400DA69C9 /* ProfileViewController.swift */; };
 		C69EE3921FE816FF006E269C /* ChallengeListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3911FE816FF006E269C /* ChallengeListService.swift */; };
 		C69EE3941FE81A5B006E269C /* ChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3931FE81A5B006E269C /* ChallengeModel.swift */; };
 		C69EE3961FE8202D006E269C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EE3951FE8202D006E269C /* BaseViewController.swift */; };
@@ -73,6 +75,8 @@
 		7A52DCB6191ADB6F8AA794ED /* Pods_ThrumpItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThrumpItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B5698BFDB998EA2689D630 /* Pods_ThrumpIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThrumpIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		915E027E71EC28DD8EC4C6FD /* Pods_ThrumpItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThrumpItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63234731FF2E03400DA69C9 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		C63234751FF2E04400DA69C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C69EE3911FE816FF006E269C /* ChallengeListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListService.swift; sourceTree = "<group>"; };
 		C69EE3931FE81A5B006E269C /* ChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModel.swift; sourceTree = "<group>"; };
 		C69EE3951FE8202D006E269C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				C69EE3991FE84D34006E269C /* SignInViewController.swift */,
 				C69EE39B1FE84D42006E269C /* SignUpViewController.swift */,
 				C69EE3A21FEA6138006E269C /* ThTabBarViewController.swift */,
+				C63234731FF2E03400DA69C9 /* NotificationsViewController.swift */,
+				C63234751FF2E04400DA69C9 /* ProfileViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -460,9 +466,11 @@
 				22D082EA1F9F4B430011E5D4 /* ThrumpIt.xcdatamodeld in Sources */,
 				220D814C1FD34A33001B7053 /* ApiResponseModel.swift in Sources */,
 				C69EE3981FE82046006E269C /* ChallengeListViewController.swift in Sources */,
+				C63234761FF2E04400DA69C9 /* ProfileViewController.swift in Sources */,
 				C69EE3941FE81A5B006E269C /* ChallengeModel.swift in Sources */,
 				C69EE39C1FE84D42006E269C /* SignUpViewController.swift in Sources */,
 				C69EE3A11FE8F32F006E269C /* AuthenticatorService.swift in Sources */,
+				C63234741FF2E03400DA69C9 /* NotificationsViewController.swift in Sources */,
 				C69EE39F1FE8B099006E269C /* Util.swift in Sources */,
 				C69EE3961FE8202D006E269C /* BaseViewController.swift in Sources */,
 				22D082E21F9F4B430011E5D4 /* AppDelegate.swift in Sources */,
@@ -631,6 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT42V94U76;
 				INFOPLIST_FILE = ThrumpIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.doctususa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,6 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT42V94U76;
 				INFOPLIST_FILE = ThrumpIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.doctususa.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";

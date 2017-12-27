@@ -106,8 +106,10 @@ class SignUpViewController: BaseViewController, UITextFieldDelegate {
         let alertControlelr = UIAlertController(title: "Please activate your account", message: "Congratulations you are almost there !!!\nAn activation link is sent to your email address. Please click the link to activate your account.", preferredStyle: .alert)
         alertControlelr.addAction(UIAlertAction(title: "SignIn", style: .cancel, handler: { void in
             self.dismiss(animated: false, completion: {
-                if let parentvc = self.presentingViewController as? ChallengeListViewController{
-                    parentvc.openSignIn()
+                DispatchQueue.main.async {
+                    if let parentvc = self.presentingViewController as? ChallengeListViewController{
+                        parentvc.openSignIn()
+                    }
                 }
             })
         }))

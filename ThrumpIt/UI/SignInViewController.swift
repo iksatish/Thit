@@ -25,7 +25,7 @@ class SignInViewController: BaseViewController, UITextFieldDelegate {
     }
 
     @IBAction func onTappingSignInBtn(_ sender: UIButton) {
-        self.submitSignIn()
+        let _ = self.submitSignIn()
     }
     
     @IBAction func onTappingCancelBtn(_ sender: UIButton) {
@@ -81,12 +81,14 @@ class SignInViewController: BaseViewController, UITextFieldDelegate {
     
     func signIn(){
         let params = ["uid": emailTextField.text, "password": passwordTextField.text]
+        showLoadingNotification(message: "Signing In...")
         AuthenticatorService.instance.signIn(params: params as [String : AnyObject], success: { (user) in
+            self.hideLoadingNotification()
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             UserPreference.instance.logInUser()
             appDelegate.launchApp()
         }) { (error) in
-            UserPreference.instance.logInUser()
+            self.hideLoadingNotification()
             self.showError(error: error)
         }
     }

@@ -10,6 +10,9 @@ import UIKit
 
 class ChallengeListViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet weak var challengeBtn: UIButton!
+    @IBOutlet weak var addUserBtn: UIBarButtonItem!
     @IBOutlet weak var signInBoxHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     var challengeList: [ChallengeModel]?
@@ -19,10 +22,20 @@ class ChallengeListViewController: BaseViewController, UITableViewDelegate, UITa
         self.tableView.rowHeight = 200
         self.tableView.register(UINib(nibName: "ItemCell", bundle: nil ), forCellReuseIdentifier: "cellIdentifier")
         self.title = "Home"
+        let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: 98, height: 34))
+        imgView.image = #imageLiteral(resourceName: "titleimg.png")
+        imgView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imgView
         if UserPreference.instance.isLoggedIn(){
             signInBoxHeightConstraint.constant = 0
+            challengeBtn.layer.cornerRadius = 3.0
+            let barButton = UIBarButtonItem(customView: challengeBtn)
+            self.navigationItem.rightBarButtonItem = barButton
+        }else{
+            self.navigationItem.rightBarButtonItem = nil
+            self.navigationItem.leftBarButtonItem = nil
         }
-        self.tableView.tableHeaderView = UISearchBar()
+        self.tableView.tableHeaderView = self.searchBar
     }
     
     
@@ -30,7 +43,6 @@ class ChallengeListViewController: BaseViewController, UITableViewDelegate, UITa
         super.viewWillAppear(animated)
         self.fetchChallengeList()
     }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.challengeList?.count ?? 0
@@ -79,4 +91,9 @@ class ChallengeListViewController: BaseViewController, UITableViewDelegate, UITa
             self.navigationController?.present(navc, animated: true, completion: nil)
         }
     }
+    @IBAction func addUser(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func startNewChallenge(_ sender: UIButton) {
+    }
+    
 }
