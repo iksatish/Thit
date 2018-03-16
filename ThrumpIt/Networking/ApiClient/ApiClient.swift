@@ -24,7 +24,7 @@ class ApiClient: NSObject{
     
     class func requestPOSTURL(_ strURL : String, params : [String : AnyObject]?, headers : [String : String]?, success:@escaping (JSON) -> Void, failure:@escaping (ApiError) -> Void){
         
-        Alamofire.request(strURL, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (responseObject) -> Void in
+        Alamofire.request(strURL, method: .post, parameters: params, encoding: JSONEncoding.default, headers: ["Content-Type":"application/json"]).responseJSON { (responseObject) -> Void in
             ApiClient.handlingResponse(responseObject: responseObject, success: { (json) in
                 success(json)
             }, failure: { (error) in

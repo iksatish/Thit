@@ -10,7 +10,7 @@
 
 import Foundation
 
-let BASE_URL = "http://api.zingbites.com/"
+let BASE_URL = "http://api2.zingbites.com/"
 
 let URI_CHL_LIST = "challenge/list/1/999"
 
